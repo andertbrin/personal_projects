@@ -22,7 +22,7 @@ def valid_email(email):
         return False
 
 
-print(valid_email('inovabra@bradesco.com.br'))
+# print(valid_email('inovabra@bradesco.com.br'))
 
 
 """Testes em pt-br"""

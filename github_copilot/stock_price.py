@@ -49,8 +49,6 @@ def import_stock_price_since_june_2017():
     print(data.describe(include='all').transpose())
     print(data.describe(include='all').transpose().to_latex())
     print(data.describe(include='all').transpose().to_latex(index=True))
-    print(data.describe(include='all').transpose().to_latex(index=True, column_format='cccccc'))
-    print(data.describe)
 
 
 
