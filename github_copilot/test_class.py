@@ -23,6 +23,12 @@ class Car:
     def read_odometer(self):
         print(f'This car has {self.odometer_reading} miles on it.')
 
+    # crie um método que altere o nivel de combustível
+    def fill_gas_tank(self):
+        self.gas_tank_level = self.gas_tank_capacity
+        print(f'The gas tank is now full.')
+
+
 # crie duas instâncias da classe car
 car_1 = Car('Ford', 'Mustang', '2018')
 car_2 = Car('Toyota', 'Corolla', '2019')

@@ -2,6 +2,7 @@ import random
 import matplotlib.pyplot as plt
 
 
+
 # a function that returns n random integer numbers from 0 to 25
 def random_numbers_0_25(n):
     return random.sample(range(0, 25), n)
@@ -13,6 +14,17 @@ def hist_random_numbers_0_25(n):
     plt.show()
 
 
+def valid_email(email):
+    import re
+    if re.match(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', email):
+        return True
+    else:
+        return False
+
+
+print(valid_email('inovabra@bradesco.com.br'))
+
+
 """Testes em pt-br"""
 # uma função que descomprima um arquivo zip
 def unzip_file(file_name):
@@ -22,6 +34,7 @@ def unzip_file(file_name):
     return zip_ref
 
 
+'''OBS: não consegui fazer o jogo rodar'''
 #contrua um jogo de tic tac toe
 def tic_tac_toe():
     import numpy as np
@@ -92,4 +105,6 @@ def tic_tac_toe():
                 print('Invalid input!')
 
 # run tic tac toe
-tic_tac_toe()
+# tic_tac_toe()
+
+
