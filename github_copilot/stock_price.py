@@ -70,7 +70,6 @@ def create_candle_stick_chart():
     fig.show()
 
 
-
 create_candle_stick_chart()
 
 
