@@ -34,4 +34,7 @@ car_1 = Car('Ford', 'Mustang', '2018')
 car_2 = Car('Toyota', 'Corolla', '2019')
 
 
+# chame o método describe_car para cada instância
+car_1.describe_car()
+car_2.describe_car()
 
