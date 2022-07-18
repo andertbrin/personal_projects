@@ -1,6 +1,6 @@
 import random
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 
 # a function that returns n random integer numbers from 0 to 25
@@ -14,17 +14,6 @@ def hist_random_numbers_0_25(n):
     plt.show()
 
 
-def valid_email(email):
-    import re
-    if re.match(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', email):
-        return True
-    else:
-        return False
-
-
-# print(valid_email('inovabra@bradesco.com.br'))
-
-
 """Testes em pt-br"""
 # uma função que descomprima um arquivo zip
 def unzip_file(file_name):
@@ -32,6 +21,29 @@ def unzip_file(file_name):
     with zipfile.ZipFile(file_name, 'r') as zip_ref:
         zip_ref.extractall()
     return zip_ref
+
+
+def draw_scatter_plot():
+    # define the x and y coordinates
+    x = np.random.randn(1000)
+    y = np.random.randn(1000)
+
+    # define the scatter plot
+    plt.scatter(x, y)
+
+    # define the x and y limits
+    plt.xlim(-5, 5)
+    plt.ylim(-5, 5)
+
+    # define the x and y labels
+    plt.xlabel('x')
+    plt.ylabel('y')
+
+    # define the title
+    plt.title('Scatter Plot')
+
+    # show the plot
+    plt.show()
 
 
 '''OBS: não consegui fazer o jogo rodar'''
